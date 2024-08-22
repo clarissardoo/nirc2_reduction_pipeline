@@ -7,11 +7,11 @@ The pipeline ultimately produces a final de-rotated and centroid-shifted median 
 ###### Main Features: ######
 - Target Setup: Easily define and configure a target system using the Target class.
 - Data Cube Creation: Automatically extract frames from FITS files, generating a 3D data cube and computing a 2D median frame.
-- Bad Pixel Mapping and Correction: Detects bad pixels using statistical thresholds and applies corrections by replacing their values with the median of surrounding pixels.
+- Bad Pixel Mapping and Correction: Detects bad pixels using statistical thresholds and applies corrections by replacing their values with the median of pixel counts.
 - Distortion Correction: Integrates with the RAIN software package to correct image distortions.
-- Image De-rotation: Adjusts frames to a common parallactic angle for accurate alignment.
-- Centroid Shifting: Aligns images to a common centroid position for further analysis.
-- Automated Pipeline Execution: Provides a single command to run the entire sequence from data extraction to generating final processed images.
+- Image De-rotation: Adjusts frames to a common parallactic angle for alignment of the companion.
+- Centroid Shifting: Aligns images to a common centroid position.
+- Automated Pipeline Execution: Provides a single command to run the entire sequence to generate final processed images.
 
 ###### Prerequisites ######
 - Python 3.8+
@@ -22,6 +22,7 @@ The pipeline ultimately produces a final de-rotated and centroid-shifted median 
   - photutils
   - scipy
   - skimage
+  - rain package for distortion correction
 
 
 ###### Usage ######
