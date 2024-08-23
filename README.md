@@ -31,11 +31,11 @@ Set up your data directory and file ranges for the target system. The directory 
 
 Instantiate a Target object with the required parameters and run the entire pipeline:
 
-'''
+```
 data_dir_feb = '/path/to/your/data/'
 rxs = Target("1rxs1216b", data_dir_feb, [79, 108], [109, 138], [3, 12], [13, 22])
 rxs.run_it_all()
-'''
+```
 
 ###### Outputs ######
 The pipeline generates the following output files in a specified directory:
